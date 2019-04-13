@@ -10,12 +10,14 @@
 
 
 //  Variables
-int t[10];              // Array to count moving average             
-int counter = 0;        // Counter for calculating number of values added to the array
-bool trigger = false;   // Trigger whether a person is dead or alive
+int PulseSensorPurplePin = 0;          // Pulse Sensor PURPLE WIRE connected to ANALOG PIN 0
+int LED13 = 13;                        //  The on-board Arduion LED
+int t[10];                            // Array to count moving average             
+int counter = 0;                      // Counter for calculating number of values added to the array
+bool trigger = false;                 // Trigger whether a person is dead or alive
 
-int Signal;             // holds the incoming raw data. Signal value can range from 0-1024
-int Threshold = 800;    // Determine which Signal to "count as a beat", and which to ingore.
+int Signal;                          // holds the incoming raw data. Signal value can range from 0-1024
+int Threshold = 800;                 // Determine which Signal to "count as a beat", and which to ingore.
 
 
 // The SetUp Function:
